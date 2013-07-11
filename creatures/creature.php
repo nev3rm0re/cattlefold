@@ -1,9 +1,19 @@
 <?php
 	require_once(dirname(__FILE__).'/../abilities/move.php');
 
-	abstract class Creature
+    /**
+     * @property \Ability\Move $move
+     */
+    abstract class Creature
 	{
-		private $abilities;
+        /**
+         * @var array
+         */
+        private $abilities;
+        /**
+         * @var $location Location
+         */
+        protected $location;
 		public function __construct()
 		{
 			$this->abilities = array();
@@ -71,4 +81,6 @@
 		{
 			return is_null($this->location);
 		}
+
+
 	}

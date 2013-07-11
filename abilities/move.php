@@ -3,6 +3,10 @@
 
 	class Move
 	{
+        /**
+         * @var Creature $creature
+         */
+        private $creature;
 		public function __construct($creature) {
 			$this->creature = $creature;
 		}
