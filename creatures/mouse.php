@@ -3,7 +3,7 @@
 
 	class Mouse extends Creature
 	{
-		public function configure()
+        public function configure()
 		{
 			$this->food_needed = 30;
 			$this->lifespan = -1;
@@ -21,4 +21,5 @@
 				$this->last_move = $direction;
 			}
 		}
+
 	}

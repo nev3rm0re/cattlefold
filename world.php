@@ -13,7 +13,10 @@
 			}
 		}
 
-		static $instance = null;
+        /**
+         * @var World
+         */
+        static $instance = null;
 		public static function getInstance()
 		{
 			if (is_null(self::$instance)) {
